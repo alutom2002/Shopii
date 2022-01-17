@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta viewport="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopii</title>
+    <link rel="icon" href="./assets//img/brand.png">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="container">
+
+                <div class="header__wrapper ">
+                    <div class="row ">
+
+                        <a href="index.html" class="header__logo__wrapper col l-3 m-3 c-3 xs-3">
+                            <img src="./assets/img/brand.png ">
+                            <span>
+                                Shopii
+                            </span>
+                        </a>
+
+                        <div class="header__search__wrapper col l-5 m-7 c-5 xs-6">
+                            <input type="search " placeholder="Search here... ">
+                            <div class="header__search__btn ">
+                                <i class="fa fa-search "></i>
+                            </div>
+                        </div>
+
+                        <div class="header__cart__wrapper col l-2 m-1 c-2 xs-2">
+                            <a href="cart.html">
+                                <i class="fa fa-shopping-cart "></i>
+                                <span class="number-badge">0</span>
+                            </a>
+                        </div>
+
+                        <div class="header__user__wrapper col l-2 m-1 c-2 xs-1">
+                            <div class="header__profile__icon ">
+                                <i class="fa fa-user "></i>
+                            </div>
+                            <div class="header__profile__info ">
+                                <span>
+                                    Log in/Register
+                                </span>
+                                <span>
+                                    Account
+                                    <i class="fa fa-caret-down "></i>
+                                </span>
+                            </div>
+                            <div class="user__login "></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Body -->
+
+        <div class="body ">
+
+            <div class="container ">
+
+                <!-- Cart -->
+
+                <div class="cart__wrapper pd-1-0">
+                    <div class="row">
+                        <div class="col l-8 m-8 c-8 xs-12">
+                            <div class="cart__inner">
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12 xs-12">
+                                        <div class="cart__title -wrapper">
+                                            Your cart
+                                        </div>
+                                        <div class="cart__header -wrapper">
+                                            <div class="row">
+                                                <div class="col l-4 m-4 c-4 xs-6">
+                                                    <label class="cart__checkbox">
+                                                        <input type="checkbox" id="all">
+                                                        <span class="checkbox-label"></span>
+                                                        <span>All</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col l-2 m-2 c-2 xs-0">
+                                                    <div class="cart__header__title">
+                                                        Price
+                                                    </div>
+                                                </div>
+                                                <div class="col l-2 m-2 c-2 xs-0">
+                                                    <div class="cart__header__title">
+                                                        Quantity
+                                                    </div>
+                                                </div>
+                                                <div class="col l-2 m-2 c-2 xs-0">
+                                                    <div class="cart__header__title">
+                                                        Total
+                                                    </div>
+                                                </div>
+                                                <div class="col l-2 m-2 c-2 xs-6">
+                                                    <span class="cart__remove__all">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-12 m-12 c-12 xs-12">
+                                        <div class="cart__item__container">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-4 xs-0">
+                            <div class="cart__total">
+                                <div class="cart__info -wrapper">
+                                    <div class="cart__info__header">
+                                        <span>Delivery To</span>
+                                        <span>Change Address</span>
+                                    </div>
+                                    <div class="cart__info__title">
+                                        <div class="name">
+                                            Joy Obrien
+                                        </div>
+                                        <span>|</span>
+                                        <div class="phone">
+                                            (716) 201-1212
+                                        </div>
+                                    </div>
+                                    <div class="cart__info__address">
+                                        6231 Tonawanda Creek Rd #APT 308 Lockport, New York(NY), 14094
+                                    </div>
+                                </div>
+                                <div class="cart__coupon -wrapper">
+                                    <div class="cart__coupon__title">
+                                        <div class="cart__coupon__title">
+                                            Shopii Coupon
+                                        </div>
+                                        <div class="cart__coupon__use">
+                                            Only 2 coupons can be used
+                                        </div>
+                                    </div>
+                                    <div class="cart__coupon__choice">
+                                        <img src="./assets/img/voucher.png" alt=""> Select or enter Promotion
+                                    </div>
+                                </div>
+                                <div class="cart__price">
+                                    <div class="cart__prices__items -wrapper">
+                                        <div class="cart__price__item">
+                                            <div class="cart__price__text">
+                                                Provisional
+                                            </div>
+                                            <div class="cart__price__value">
+                                                <span>$</span>
+                                                <div id="price__value">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__price__item">
+                                            <div class="cart__price__text">
+                                                Discount
+                                            </div>
+                                            <div class="cart__price__value">
+                                                <span>$</span>
+                                                <div id="discount__value">0</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart__total__price -wrapper">
+                                        <div class="cart__total__text">
+                                            Total
+                                        </div>
+                                        <div class="cart__total__desc">
+                                            Please chose your items
+                                        </div>
+                                        <div class="cart__total__item">
+                                            <span>$</span>
+                                            <div class="cart__total__item__number"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cart__buy__btn">
+                                        Buy(<span id="quantity">0</span>)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stack banner 2 -->
+
+                    <div class="stack__banner__wrapper pd-1-0 ">
+
+                        <div class="stack__banner__item ">
+                            <a href="# ">
+                                <img src="./assets/img/stack-banner4.png " alt=" ">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Rating -->
+
+                    <!-- Flash deals -->
+
+                    <div class="flash__wrapper pd-1-0 ">
+
+                        <div class="row ">
+
+                            <div class="col l-12 m-12 c-12 xs-12 ">
+                                <div class="flash__header -wrapper ">
+                                    <div class="flash__header__title ">
+                                        <div class="flash__header__desc ">
+                                            FL
+                                            <i class="fa fa-flash "></i> SH DEALS
+                                        </div>
+                                        <div class="flash__header__time pd-0-1 ">
+                                            <p class="day ">Time</p>
+                                            <span>:</span>
+                                            <p class="hour ">Time</p>
+                                            <span>:</span>
+                                            <p class="minute ">Time</p>
+                                            <span>:</span>
+                                            <p class="second ">Time</p>
+                                        </div>
+                                    </div>
+                                    <div class="flash__header__btn ">
+                                        <a href="# ">
+                                            See All
+                                            <i class="fa fa-caret-right pd-0-1 "></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-12 m-12 c-12 xs-12 ">
+                                <div class="flash__content -wrapper ">
+                                    <div class="swiper flash__slider ">
+                                        <div class="swiper-wrapper ">
+                                            <div class="swiper-slide flash__slide ">
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item1.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>20%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 948.00
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            60 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item2.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>48%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 108.00
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            26 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item3.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>43%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 388.00
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            21 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item4.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>20%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 18.82
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            12 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item5.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>33%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 32.55
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            24 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item6.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>25%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 14.84
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            8 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide flash__slide ">
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item7.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>13%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 30.00
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            30 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item8.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>12%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 14.9
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            3 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item9.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>30%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 16.00
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            31 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item10.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>23%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 29.90
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            34 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item11.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>36%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 10.8
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            10 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flash__item ">
+                                                    <div class="flash__img ">
+                                                        <img src="./assets/img/item12.jfif " alt=" ">
+                                                        <div class="sale ">
+                                                            <h3>18%</h3>
+                                                            <h3>OFF</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flash__desc ">
+                                                        <h2 class="flash__price ">
+                                                            <span>$</span> 39.90
+                                                        </h2>
+                                                        <div class="flash__sold ">
+                                                            3 Sold
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next "></div>
+                                        <div class="swiper-button-prev "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+
+            <footer class="footer pd-2-0 ">
+
+                <div class="container ">
+
+                    <div class="footer__wrapper ">
+                        <div class="row ">
+                            <div class="col l-3 m-3 c-3 xs-3 ">
+                                <div class="footer__content ">
+                                    <div class="footer__header ">Customer Service</div>
+                                    <ul class="footer__list ">
+                                        <li>
+                                            <a href="# ">
+                                                Help Centre
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                How To Buy
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                How To Sell
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                Payment Method
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                Return & Refund
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-3 c-3 xs-3 ">
+                                <div class="footer__content ">
+                                    <div class="footer__header ">About Shopii</div>
+                                    <ul class="footer__list ">
+                                        <li>
+                                            <a href="# ">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                Shopii Policies
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                Shopii Careers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                Shoppii Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                Privacy Policy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-3 c-3 xs-3 ">
+                                <div class="footer__content ">
+                                    <div class="footer__header ">Payment</div>
+                                    <ul class="footer__list__payment ">
+                                        <li>
+                                            <div class="footer__visa "></div>
+                                        </li>
+                                        <li>
+                                            <div class="footer__mastercard "></div>
+                                        </li>
+                                        <li>
+                                            <div class="footer__express "></div>
+                                        </li>
+                                        <li>
+                                            <div class="footer__jcb "></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-3 c-3 xs-3 ">
+                                <div class="footer__content ">
+                                    <div class="footer__header ">Follow Us</div>
+                                    <ul class="footer__list ">
+                                        <li>
+                                            <a href="# ">
+                                                <i class="fa fa-facebook "></i> Facebook
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                <i class="fa fa-instagram "></i> Instagram
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="# ">
+                                                <i class="fa fa-twitter "></i> Twitter
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright ">© Copyright 2021 Jinun20th | All rights reserved</div>
+                </div>
+
+            </footer>
+
+        </div>
+
+        <div class="login__register__wrapper ">
+            <div class="overlay__wrapper "></div>
+            <div class="login__register__container ">
+                <div class="login__container active ">
+                    <form action=" " class="login__form row ">
+                        <h2>Log In</h2>
+                        <div class="login__input col l-12 m-12 c-12 xs-12 ">
+                            <input type="email " placeholder="Phone Number / Username / Email ">
+                        </div>
+                        <div class="login__input col l-12 m-12 c-12 xs-12 ">
+                            <input type="password " placeholder="Password ">
+                        </div>
+                        <div class="login__input col l-12 m-12 c-12 xs-12 ">
+                            <button class="login__btn ">Login</button>
+                        </div>
+                    </form>
+                    <div class="login__selections ">
+                        <a href="# ">Forgot your password</a>
+                        <a href="# ">Log in with SMS</a>
+                    </div>
+                    <span class="login__span ">OR</span>
+                    <div class="login__method ">
+                        <div class="login__method__item ">
+                            <i class="fa fa-facebook "></i>Facebook
+                        </div>
+                        <div class="login__method__item ">
+                            <i class="fa fa-google "></i>Google
+                        </div>
+                        <div class="login__method__item ">
+                            <i class="fa fa-apple "></i>Apple
+                        </div>
+                    </div>
+                    <div class="register ">New to shopii? <span id="register__swap">Sign up</a></div>
+                </div>
+                <div class="register__container ">
+                    <form action=" " class="register__form row ">
+                        <h2>Register</h2>
+                        <div class="register__input col l-12 m-12 c-12 xs-12 ">
+                            <input type="text " placeholder="Username ">
+                        </div>
+                        <div class="register__input col l-6 m-6 c-6 xs-6 ">
+                            <input type="email " placeholder="Email ">
+                        </div>
+                        <div class="register__input col l-6 m-6 c-6 xs-6 ">
+                            <input type="tel " placeholder="Phone Number ">
+                        </div>
+                        <div class="register__input col l-12 m-12 c-12 xs-12 ">
+                            <input type="password " placeholder="Password ">
+                        </div>
+                        <div class="register__input col l-12 m-12 c-12 xs-12 ">
+                            <input type="password " placeholder="Repeat Password ">
+                        </div>
+                        <div class="register__input col l-12 m-12 c-12 xs-12 ">
+                            <button class="register__btn ">Register</button>
+                        </div>
+                    </form>
+                    <div class="login">Already Registered? <span id="login__swap">Log In Here</a></div>
+                </div>
+                <div class="alert-box">
+                    <img src="./assets/img/error.png" alt="">
+                    <div class="alert-msg">Error msg</div>
+                </div>
+                <div class="btn__close "><i class="fa fa-window-close-o "></i></div>
+            </div>
+        </div>
+
+        <!-- Main js -->
+        <script src="./assets/js/script.js "></script>
+        <script src="./assets/js/cart.js"></script>
+</body>
+
+</html>

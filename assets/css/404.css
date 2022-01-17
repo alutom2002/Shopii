@@ -1,0 +1,26 @@
+.four-0-four__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.four-0-four__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four-0-four__img {
+    filter: hue-rotate(90deg);
+}
+
+.four-0-four__content {
+    font-size: 4rem;
+    margin: 6rem 0;
+    color: #000;
+}
+
+.four-0-four__content a {
+    color: var(--r);
+}

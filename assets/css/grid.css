@@ -4,14 +4,14 @@
     padding: 0;
 }
 
-.grid.wide,
-.container {
+.grid.wide {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.row.width {
+.row.width,
+.container {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
@@ -388,8 +388,7 @@
 /* Tablet - PC low resolution */
 
 @media (min-width: 740px) and (max-width: 1023px) {
-    .wide,
-    .container {
+    .wide {
         width: 644px;
     }
     .row.width {
@@ -401,8 +400,7 @@
 /* > PC low resolution */
 
 @media (min-width: 1024px) and (max-width: 1239px) {
-    .wide,
-    .container {
+    .wide {
         width: 984px;
     }
     .row.width {
