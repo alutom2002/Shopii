@@ -124,7 +124,7 @@ registerbtn.onclick = function() {
     document.querySelector(".register__container").classList.add("active");
 }
 
-let carts = document.querySelectorAll(".product__cart");
+/* let carts = document.querySelectorAll(".product__cart");
 
 let products = [{
         name: 'Huwei Watch GT3',
@@ -283,6 +283,5 @@ function displayCart() {
     }
 }
 
-displayProduct();
 displayCart();
-onLoadCartNumbers();
+onLoadCartNumbers(); */
