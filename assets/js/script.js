@@ -124,164 +124,23 @@ registerbtn.onclick = function() {
     document.querySelector(".register__container").classList.add("active");
 }
 
-/* let carts = document.querySelectorAll(".product__cart");
-
-let products = [{
-        name: 'Huwei Watch GT3',
-        tag: 'item2',
-        price: 108,
-        inCart: 0
-    },
-    {
-        name: 'Huwei MateBook D 15',
-        tag: 'item1',
-        price: 948,
-        inCart: 0
-    },
-    {
-        name: 'Huwei MatePad 11',
-        tag: 'item3',
-        price: 388,
-        inCart: 0
-    },
-]
-
-for (var i = 0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
-        cartNumbers(products[i]);
-        totalCost(products[i]);
-    })
-}
-
-function onLoadCartNumbers() {
-
-    let productNumbers = localStorage.getItem('cartNumbers');
-
-    if (productNumbers) {
-        document.querySelector(".number-badge").textContent = productNumbers;
+//quantity btn
+let minus = document.querySelector("#minus");
+let plus = document.querySelector("#plus");
+let quantity = document.querySelector("#quantity__input");
+//click on plus
+plus.onclick = (function() {
+    if (quantity.value >= 1) {
+        var count = quantity.value;
+        ++count;
+        quantity.value = count;
     }
-}
+})
 
-function cartNumbers(product) {
-    console.log("the product is ", product);
-    let productNumbers = localStorage.getItem('cartNumbers');
-
-    productNumbers = parseInt(productNumbers);
-
-    if (productNumbers) {
-        localStorage.setItem('cartNumbers', productNumbers + 1);
-        document.querySelector(".number-badge").textContent = productNumbers + 1;
-
-    } else {
-        localStorage.setItem('cartNumbers', 1);
-        document.querySelector(".number-badge").textContent = 1;
+minus.onclick = (function() {
+    if (quantity.value > 1) {
+        var count = quantity.value;
+        --count;
+        quantity.value = count;
     }
-
-    setItem(product);
-}
-
-function setItem(product) {
-    let cartItems = localStorage.getItem('productsInCart');
-
-    cartItems = JSON.parse(cartItems);
-
-    if (cartItems != null) {
-
-        if (cartItems[product.tag] == undefined) {
-            cartItems = {
-                ...cartItems,
-                [product.tag]: product
-            }
-        }
-
-        cartItems[product.tag].inCart += 1;
-    } else {
-        product.inCart = 1;
-        cartItems = {
-            [product.tag]: product
-        }
-    }
-
-    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-}
-
-function totalCost(product) {
-    let cartCost = localStorage.getItem('totalCost');
-
-    if (cartCost != null) {
-        cartCost = parseInt(cartCost);
-        localStorage.setItem("totalCost", cartCost + product.price);
-    } else {
-        localStorage.setItem("totalCost", product.price);
-    }
-}
-
-function displayProduct() {
-
-}
-
-function displayCart() {
-    let cartItems = localStorage.getItem("productsInCart");
-    cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector(".cart__item__container")
-    if (cartItems && productContainer) {
-        productContainer.innerHTML = '';
-        Object.values(cartItems).map(item => {
-            productContainer.innerHTML += `<div class="row">
-            <div class="col l-4 m-4 c-4 xs-6">
-                <div class="cart__item">
-                    <div class="cart__item__checkbox">
-                        <label>
-                            <input type="checkbox" id="item">
-                            <span class="checkbox-label"></span>
-                        </label>
-                    </div>
-                    <div class="cart__item__img">
-                        <img src="./assets/img/${item.tag}.jfif" alt="">
-                    </div>
-                    <div class="cart__item__desc">
-                        <a href="product.html">
-                            ${item.name}
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col l-2 m-2 c-2 xs-0">
-                <div class="cart__first__price">
-                    <span>$</span>
-                    <div class="cart__first__price__number">
-                        ${item.price}
-                    </div>
-                </div>
-            </div>
-            <div class="col l-2 m-2 c-2 xs-0">
-                <div class="cart__quantity">
-                    <div class="quantity__btn" id="minus">-</div>
-                    <input type="text" value="${item.inCart}" id="quantity__input">
-                    <div class="quantity__btn" id="plus">+</div>
-                </div>
-            </div>
-            <div class="col l-2 m-2 c-2 xs-0">
-                <div class="cart__final__price">
-                    <span>
-                        $
-                    </span>
-                    <div class="cart__final__price__number">
-                        ${item.inCart * item.price},00
-                    </div>
-                </div>
-            </div>
-            <div class="col l-2 m-2 c-2 xs-6">
-                <div class="cart__remove">
-                    <i class="fa fa-trash"></i>
-                </div>
-            </div>
-        </div>`
-
-        });
-
-    }
-}
-
-displayCart();
-onLoadCartNumbers(); */
+})
